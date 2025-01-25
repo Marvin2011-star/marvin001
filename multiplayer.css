@@ -1,0 +1,58 @@
+
+.headv2 {
+  font-family: "Smooch Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style : normal;
+  text-align: center;
+}
+.bodyv1 {
+  font-family: "Smooch Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style : normal;
+  text-align: center;
+  color:white;
+  opacity: 0; 
+  animation: fadeIn ease-in 1; 
+  animation-fill-mode: forwards; 
+  animation-duration: 1s; 
+}
+.bodyv2 {
+  font-family: "Smooch Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style : normal;
+  color: white; 
+  opacity: 0; 
+  animation: fadeIn ease-in 1; 
+  animation-fill-mode: forwards; 
+  animation-duration: 1s; 
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+body {
+  background-image: url('img/images1.jpg'); 
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0; 
+  height: 100vh;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+ 
+.gallery img {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+}
